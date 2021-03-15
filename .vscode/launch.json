@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "[STAGING] Flutter Run Debug",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=CURRENT_FLAVOR=staging",
+                "--flavor",
+                "staging"
+            ]
+        },
+        {
+            "name": "[STAGING] Flutter Run Release",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--release",
+                "--dart-define=CURRENT_FLAVOR=staging",
+                "--flavor",
+                "staging"
+            ]
+        },
+        {
+            "name": "[DEV] Flutter Run Debug",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=CURRENT_FLAVOR=dev",
+                "--flavor",
+                "dev"
+            ]
+        },
+        {
+            "name": "[DEV] Flutter Run Release",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--release",
+                "--dart-define=CURRENT_FLAVOR=dev",
+                "--flavor",
+                "dev"
+            ]
+        },
+        {
+            "name": "[PROD] Flutter Run Debug",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=CURRENT_FLAVOR=prod",
+                "--flavor",
+                "prod"
+            ]
+        },
+        {
+            "name": "[PROD] Flutter Run Release",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--release",
+                "--dart-define=CURRENT_FLAVOR=prod",
+                "--flavor",
+                "prod"
+            ]
+        }
+    ]
+}

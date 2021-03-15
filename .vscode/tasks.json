@@ -1,0 +1,68 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "[ANDROID][STAGING] flutter build apk arm64",
+            "type": "shell",
+            "command": "flutter build apk --release --target-platform android-arm64 --dart-define=CURRENT_FLAVOR=staging  --flavor staging",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "[ANDROID][DEV] flutter build apk arm64",
+            "type": "shell",
+            "command": "flutter build apk --release --target-platform android-arm64 --dart-define=CURRENT_FLAVOR=dev  --flavor dev",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "[ANDROID][PROD] flutter build apk arm64",
+            "type": "shell",
+            "command": "flutter build apk --release --target-platform android-arm64 --dart-define=CURRENT_FLAVOR=prod  --flavor prod",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "[ANDROID][PROD] flutter build appbundle",
+            "type": "shell",
+            "command": "flutter build appbundle --dart-define=CURRENT_FLAVOR=prod --flavor prod",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "[IOS][STAGING] flutter build ipa",
+            "type": "shell",
+            "command": "flutter build ipa --release --dart-define=CURRENT_FLAVOR=staging  --flavor staging",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "[IOS][DEV] flutter build ipa",
+            "type": "shell",
+            "command": "flutter build ipa --release --dart-define=CURRENT_FLAVOR=dev  --flavor dev",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "[IOS][PROD] flutter build ipa",
+            "type": "shell",
+            "command": "flutter build ipa --release --dart-define=CURRENT_FLAVOR=prod  --flavor prod",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

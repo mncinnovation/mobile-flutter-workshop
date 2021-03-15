@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">[STAGING] Workshop</string>
+    =
+    <string name="deeplink_scheme">deeplinkschemestaging</string>
+</resources>

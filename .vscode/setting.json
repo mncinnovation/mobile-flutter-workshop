@@ -1,0 +1,16 @@
+{
+    "debug.openDebug": "openOnDebugBreak",
+    "dart.lineLength": 200,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+    "editor.rulers": [
+        200
+    ],
+    "files.watcherExclude": {
+        "**/build/**": true,
+        "**/android/**": true,
+        "**/ios/**": true
+    }
+}
