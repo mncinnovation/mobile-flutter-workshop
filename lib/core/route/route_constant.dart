@@ -6,4 +6,6 @@ class RouteConstant {
   static const home = '/';
   static const profile = '/profile';
   static const detail = '/detail';
+  static const day1 = '/introduction';
+  static const day2 = '/widget';
 }
