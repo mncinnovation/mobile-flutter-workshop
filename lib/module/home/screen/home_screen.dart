@@ -48,6 +48,17 @@ class HomeScreen extends StatelessWidget {
                           style: TextStyle(fontSize: 20),
                         ),
                       ),
+                      ElevatedButton(
+                        onPressed: () => Get.toNamed(RouteConstant.day3),
+                        style: ButtonStyle(
+                            padding: MaterialStateProperty.all(
+                                EdgeInsets.symmetric(
+                                    horizontal: 42.0, vertical: 10.0))),
+                        child: Text(
+                          '[3rd] Layout widget',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
                     ],
                   ),
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 import 'package:thedartpackage/module/basic_widget/controller/basic_widget_controller.dart';
 
 class BasicWidgetScreen extends StatefulWidget {
@@ -41,13 +42,12 @@ class _BasicWidgetScreenState extends State<BasicWidgetScreen> {
                   style: TextStyle(fontSize: 20.0),
                 ),
                 SizedBox(height: 20.0),
-                Visibility(
-                  visible: showImage,
-                  child: Image.asset(
-                    "assets/logo/logo-innocent.png",
-                    scale: 16 / 9,
-                  ),
-                ),
+                showImage
+                    ? Image.asset(
+                        "assets/logo/logo-innocent.png",
+                        scale: 16 / 9,
+                      )
+                    : LottieBuilder.asset('assets/img/scooter.json'),
                 SizedBox(height: 20.0),
                 ElevatedButton(
                     onPressed: () {
