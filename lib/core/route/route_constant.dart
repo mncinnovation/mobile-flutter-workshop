@@ -9,4 +9,5 @@ class RouteConstant {
   static const day1 = '/introduction';
   static const day2 = '/widget';
   static const day3 = '/layout';
+  static const day4 = '/state';
 }

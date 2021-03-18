@@ -37,7 +37,7 @@ class _BasicWidgetScreenState extends State<BasicWidgetScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                 Text(
                   'Hai innocent',
                   style: TextStyle(fontSize: 20.0),
                 ),
